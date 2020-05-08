@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
+#pragma warning disable 168
+
 namespace VRM
 {
     public static partial class VRMVersion

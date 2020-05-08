@@ -3,6 +3,8 @@ using System.Linq;
 using UnityEngine;
 using UniGLTF;
 
+#pragma warning disable 649
+
 namespace VRM
 {
     /// <summary>
@@ -49,11 +51,11 @@ namespace VRM
         public VRMSpringBoneColliderGroup[] ColliderGroups;
 
         /// <summary>
-        /// 
+        ///
         /// original from
-        /// 
+        ///
         /// http://rocketjump.skr.jp/unity3d/109/
-        /// 
+        ///
         /// </summary>
         public class VRMSpringBoneLogic
         {
@@ -148,7 +150,7 @@ namespace VRM
             protected virtual Quaternion ApplyRotation(Vector3 nextTail)
             {
                 var rotation = ParentRotation * m_localRotation;
-                return Quaternion.FromToRotation(rotation * m_boneAxis, 
+                return Quaternion.FromToRotation(rotation * m_boneAxis,
                     nextTail - m_transform.position) * rotation;
             }
 

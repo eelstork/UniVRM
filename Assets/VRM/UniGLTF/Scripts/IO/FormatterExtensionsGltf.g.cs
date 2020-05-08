@@ -5,6 +5,8 @@ using UniJSON;
 using UnityEngine;
 using VRM;
 
+#pragma warning disable 162
+
 namespace UniGLTF {
 
     static public class IFormatterExtensionsGltf
@@ -71,7 +73,7 @@ namespace UniGLTF {
             f.Key("skins"); f.GenSerialize(value.skins);
         }
 
-        
+
         {
             f.Key("scene"); f.GenSerialize(value.scene);
         }
@@ -163,7 +165,7 @@ namespace UniGLTF {
             f.Key("uri"); f.GenSerialize(value.uri);
         }
 
-        
+
         {
             f.Key("byteLength"); f.GenSerialize(value.byteLength);
         }
@@ -197,17 +199,17 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("buffer"); f.GenSerialize(value.buffer);
         }
 
-        
+
         {
             f.Key("byteOffset"); f.GenSerialize(value.byteOffset);
         }
 
-        
+
         {
             f.Key("byteLength"); f.GenSerialize(value.byteLength);
         }
@@ -251,12 +253,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("bufferView"); f.GenSerialize(value.bufferView);
         }
 
-        
+
         {
             f.Key("byteOffset"); f.GenSerialize(value.byteOffset);
         }
@@ -266,12 +268,12 @@ namespace UniGLTF {
             f.Key("type"); f.GenSerialize(value.type);
         }
 
-        
+
         {
             f.Key("componentType"); f.GenSerialize(value.componentType);
         }
 
-        
+
         {
             f.Key("count"); f.GenSerialize(value.count);
         }
@@ -286,7 +288,7 @@ namespace UniGLTF {
             f.Key("min"); f.GenSerialize(value.min);
         }
 
-        
+
         {
             f.Key("normalized"); f.GenSerialize(value.normalized);
         }
@@ -319,7 +321,7 @@ namespace UniGLTF {
         }
         f.EndList();
     }
-                    
+
     public static void GenSerialize(this IFormatter f, Single value)
     {
         f.Value(value);
@@ -335,7 +337,7 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("count"); f.GenSerialize(value.count);
         }
@@ -358,17 +360,17 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("bufferView"); f.GenSerialize(value.bufferView);
         }
 
-        
+
         {
             f.Key("byteOffset"); f.GenSerialize(value.byteOffset);
         }
 
-        
+
         {
             f.Key("componentType"); f.GenSerialize(value.componentType);
         }
@@ -381,12 +383,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("bufferView"); f.GenSerialize(value.bufferView);
         }
 
-        
+
         {
             f.Key("byteOffset"); f.GenSerialize(value.byteOffset);
         }
@@ -410,12 +412,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("sampler"); f.GenSerialize(value.sampler);
         }
 
-        
+
         {
             f.Key("source"); f.GenSerialize(value.source);
         }
@@ -444,22 +446,22 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("magFilter"); f.GenSerialize(value.magFilter);
         }
 
-        
+
         {
             f.Key("minFilter"); f.GenSerialize(value.minFilter);
         }
 
-        
+
         {
             f.Key("wrapS"); f.GenSerialize(value.wrapS);
         }
 
-        
+
         {
             f.Key("wrapT"); f.GenSerialize(value.wrapT);
         }
@@ -508,7 +510,7 @@ namespace UniGLTF {
             f.Key("uri"); f.GenSerialize(value.uri);
         }
 
-        
+
         {
             f.Key("bufferView"); f.GenSerialize(value.bufferView);
         }
@@ -577,7 +579,7 @@ namespace UniGLTF {
             f.Key("alphaCutoff"); f.GenSerialize(value.alphaCutoff);
         }
 
-        
+
         {
             f.Key("doubleSided"); f.GenSerialize(value.doubleSided);
         }
@@ -610,12 +612,12 @@ namespace UniGLTF {
             f.Key("metallicRoughnessTexture"); f.GenSerialize(value.metallicRoughnessTexture);
         }
 
-        
+
         {
             f.Key("metallicFactor"); f.GenSerialize(value.metallicFactor);
         }
 
-        
+
         {
             f.Key("roughnessFactor"); f.GenSerialize(value.roughnessFactor);
         }
@@ -628,12 +630,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("index"); f.GenSerialize(value.index);
         }
 
-        
+
         {
             f.Key("texCoord"); f.GenSerialize(value.texCoord);
         }
@@ -646,12 +648,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("index"); f.GenSerialize(value.index);
         }
 
-        
+
         {
             f.Key("texCoord"); f.GenSerialize(value.texCoord);
         }
@@ -664,17 +666,17 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("scale"); f.GenSerialize(value.scale);
         }
 
-        
+
         {
             f.Key("index"); f.GenSerialize(value.index);
         }
 
-        
+
         {
             f.Key("texCoord"); f.GenSerialize(value.texCoord);
         }
@@ -687,17 +689,17 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("strength"); f.GenSerialize(value.strength);
         }
 
-        
+
         {
             f.Key("index"); f.GenSerialize(value.index);
         }
 
-        
+
         {
             f.Key("texCoord"); f.GenSerialize(value.texCoord);
         }
@@ -710,12 +712,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("index"); f.GenSerialize(value.index);
         }
 
-        
+
         {
             f.Key("texCoord"); f.GenSerialize(value.texCoord);
         }
@@ -794,12 +796,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("mode"); f.GenSerialize(value.mode);
         }
 
-        
+
         {
             f.Key("indices"); f.GenSerialize(value.indices);
         }
@@ -809,7 +811,7 @@ namespace UniGLTF {
             f.Key("attributes"); f.GenSerialize(value.attributes);
         }
 
-        
+
         {
             f.Key("material"); f.GenSerialize(value.material);
         }
@@ -1015,7 +1017,7 @@ namespace UniGLTF {
         }
         f.EndList();
     }
-                    
+
     /// gltf/nodes[]/extensions
     public static void GenSerialize(this IFormatter f, glTFNode_extensions value)
     {
@@ -1048,7 +1050,7 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("inverseBindMatrices"); f.GenSerialize(value.inverseBindMatrices);
         }
@@ -1150,7 +1152,7 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("sampler"); f.GenSerialize(value.sampler);
         }
@@ -1168,7 +1170,7 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("node"); f.GenSerialize(value.node);
         }
@@ -1197,7 +1199,7 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("input"); f.GenSerialize(value.input);
         }
@@ -1207,7 +1209,7 @@ namespace UniGLTF {
             f.Key("interpolation"); f.GenSerialize(value.interpolation);
         }
 
-        
+
         {
             f.Key("output"); f.GenSerialize(value.output);
         }
@@ -1241,7 +1243,7 @@ namespace UniGLTF {
             f.Key("perspective"); f.GenSerialize(value.perspective);
         }
 
-        
+
         {
             f.Key("type"); f.GenSerialize(value.type);
         }
@@ -1259,22 +1261,22 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("xmag"); f.GenSerialize(value.xmag);
         }
 
-        
+
         {
             f.Key("ymag"); f.GenSerialize(value.ymag);
         }
 
-        
+
         {
             f.Key("zfar"); f.GenSerialize(value.zfar);
         }
 
-        
+
         {
             f.Key("znear"); f.GenSerialize(value.znear);
         }
@@ -1303,22 +1305,22 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("aspectRatio"); f.GenSerialize(value.aspectRatio);
         }
 
-        
+
         {
             f.Key("yfov"); f.GenSerialize(value.yfov);
         }
 
-        
+
         {
             f.Key("zfar"); f.GenSerialize(value.zfar);
         }
 
-        
+
         {
             f.Key("znear"); f.GenSerialize(value.znear);
         }
@@ -1454,7 +1456,7 @@ namespace UniGLTF {
             f.Key("reference"); f.GenSerialize(value.reference);
         }
 
-        
+
         {
             f.Key("texture"); f.GenSerialize(value.texture);
         }
@@ -1507,42 +1509,42 @@ namespace UniGLTF {
             f.Key("humanBones"); f.GenSerialize(value.humanBones);
         }
 
-        
+
         {
             f.Key("armStretch"); f.GenSerialize(value.armStretch);
         }
 
-        
+
         {
             f.Key("legStretch"); f.GenSerialize(value.legStretch);
         }
 
-        
+
         {
             f.Key("upperArmTwist"); f.GenSerialize(value.upperArmTwist);
         }
 
-        
+
         {
             f.Key("lowerArmTwist"); f.GenSerialize(value.lowerArmTwist);
         }
 
-        
+
         {
             f.Key("upperLegTwist"); f.GenSerialize(value.upperLegTwist);
         }
 
-        
+
         {
             f.Key("lowerLegTwist"); f.GenSerialize(value.lowerLegTwist);
         }
 
-        
+
         {
             f.Key("feetSpacing"); f.GenSerialize(value.feetSpacing);
         }
 
-        
+
         {
             f.Key("hasTranslationDoF"); f.GenSerialize(value.hasTranslationDoF);
         }
@@ -1571,12 +1573,12 @@ namespace UniGLTF {
             f.Key("bone"); f.GenSerialize(value.bone);
         }
 
-        
+
         {
             f.Key("node"); f.GenSerialize(value.node);
         }
 
-        
+
         {
             f.Key("useDefaultValues"); f.GenSerialize(value.useDefaultValues);
         }
@@ -1609,17 +1611,17 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("x"); f.GenSerialize(value.x);
         }
 
-        
+
         {
             f.Key("y"); f.GenSerialize(value.y);
         }
 
-        
+
         {
             f.Key("z"); f.GenSerialize(value.z);
         }
@@ -1632,12 +1634,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("firstPersonBone"); f.GenSerialize(value.firstPersonBone);
         }
 
-        
+
         {
             f.Key("firstPersonBoneOffset"); f.GenSerialize(value.firstPersonBoneOffset);
         }
@@ -1691,7 +1693,7 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("mesh"); f.GenSerialize(value.mesh);
         }
@@ -1714,12 +1716,12 @@ namespace UniGLTF {
             f.Key("curve"); f.GenSerialize(value.curve);
         }
 
-        
+
         {
             f.Key("xRange"); f.GenSerialize(value.xRange);
         }
 
-        
+
         {
             f.Key("yRange"); f.GenSerialize(value.yRange);
         }
@@ -1776,7 +1778,7 @@ namespace UniGLTF {
             f.Key("materialValues"); f.GenSerialize(value.materialValues);
         }
 
-        
+
         {
             f.Key("isBinary"); f.GenSerialize(value.isBinary);
         }
@@ -1800,17 +1802,17 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("mesh"); f.GenSerialize(value.mesh);
         }
 
-        
+
         {
             f.Key("index"); f.GenSerialize(value.index);
         }
 
-        
+
         {
             f.Key("weight"); f.GenSerialize(value.weight);
         }
@@ -1891,32 +1893,32 @@ namespace UniGLTF {
             f.Key("comment"); f.GenSerialize(value.comment);
         }
 
-        
+
         {
             f.Key("stiffiness"); f.GenSerialize(value.stiffiness);
         }
 
-        
+
         {
             f.Key("gravityPower"); f.GenSerialize(value.gravityPower);
         }
 
-        
+
         {
             f.Key("gravityDir"); f.GenSerialize(value.gravityDir);
         }
 
-        
+
         {
             f.Key("dragForce"); f.GenSerialize(value.dragForce);
         }
 
-        
+
         {
             f.Key("center"); f.GenSerialize(value.center);
         }
 
-        
+
         {
             f.Key("hitRadius"); f.GenSerialize(value.hitRadius);
         }
@@ -1950,7 +1952,7 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("node"); f.GenSerialize(value.node);
         }
@@ -1979,12 +1981,12 @@ namespace UniGLTF {
     {
         f.BeginMap(0); // dummy
 
-        
+
         {
             f.Key("offset"); f.GenSerialize(value.offset);
         }
 
-        
+
         {
             f.Key("radius"); f.GenSerialize(value.radius);
         }
@@ -2018,7 +2020,7 @@ namespace UniGLTF {
             f.Key("shader"); f.GenSerialize(value.shader);
         }
 
-        
+
         {
             f.Key("renderQueue"); f.GenSerialize(value.renderQueue);
         }

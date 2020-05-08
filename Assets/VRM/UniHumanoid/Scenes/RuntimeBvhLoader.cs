@@ -8,6 +8,7 @@ using System;
 using UnityEditor;
 #endif
 
+#pragma warning disable 649
 
 namespace UniHumanoid
 {

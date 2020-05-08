@@ -8,6 +8,7 @@ using System.Text;
 using UnityEditor;
 #endif
 
+#pragma warning disable 618
 
 namespace UniHumanoid
 {

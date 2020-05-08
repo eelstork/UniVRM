@@ -3,6 +3,7 @@ using System.Linq;
 using UniGLTF;
 using UnityEngine;
 
+#pragma warning disable 109
 
 namespace VRM
 {
